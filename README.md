@@ -50,16 +50,16 @@ It analyzes temperature, humidity, and weather conditions to give practical clot
 
 git clone https://github.com/Pallaini-Bhargavi/Weather_Wardrobe_Advisor.git
 
-2️⃣ Open the project folder
+### 2️⃣ Open the project folder
 cd Weather_Wardrobe_Advisor
 
-3️⃣ Add your API key
+### 3️⃣ Add your API key
 Open app.js and replace:
 
 const OPENWEATHER_KEY = "YOUR_API_KEY_HERE";
 
  with your OpenWeather API key.
 
-4️⃣ Run the project
+### 4️⃣ Run the project
 
 You can open weatherapp.html directly or use Live Server (recommended).

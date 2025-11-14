@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="practice.css">
+    <title>Smart Weather</title>
+    <link rel="stylesheet" href="weatherapp.css">
 </head>
 <body>
-    
-    <form class="weatherform">
-        <input type="text" class="cityInput" placeholder="Enter city">
-        <button type="submit">Get Weather</button>
-    </form>
 
-    <div class="card" style="display:none">
+    <div class="container">
+        <h1 class="title">🌤️ Smart Weather</h1>
+
+        <form class="weather-form">
+            <input type="text" class="city-input" placeholder="Search city...">
+            <button type="submit">Search</button>
+        </form>
+
+        <div class="loader" id="loader"></div>
+
+        <div class="weather-card" id="card" style="display:none"></div>
     </div>
 
-    <script src="practice.js"></script>
+    <script src="weatherapp.js"></script>
 </body>
 </html>

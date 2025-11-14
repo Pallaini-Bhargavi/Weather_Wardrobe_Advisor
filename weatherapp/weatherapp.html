@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Weather Outfit Advisor</title>
+  <link rel="stylesheet" href="weatherapp.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="app-header">
+      <h1>Weather Wardrobe Advisor</h1>
+      <p class="tag">Weather-aware outfit recommendations</p>
+    </header>
+
+    <section class="controls">
+      <form id="searchForm" class="search-form" autocomplete="off">
+        <input id="cityInput" name="city" placeholder="Enter city (ex: Chennai)" />
+        <button type="submit" class="btn">Search</button>
+        <button type="button" id="geoBtn" class="btn ghost" title="Use my location">📍</button>
+      </form>
+
+      <div class="options">
+        <label>
+          Units:
+          <select id="unitsSelect">
+            <option value="metric">°C</option>
+            <option value="imperial">°F</option>
+          </select>
+        </label>
+      </div>
+    </section>
+
+    <section id="card" class="card hidden"></section>
+
+    <section id="feedbackArea" class="feedback hidden">
+      <p class="feedback-title">Is this outfit helpful?</p>
+      <div class="feedback-buttons">
+        <button id="yesBtn" class="btn success">Yes</button>
+        <button id="noBtn" class="btn danger">No — alternate</button>
+      </div>
+      <div id="alternateArea" class="alternate hidden"></div>
+    </section>
+
+  </main>
+
+  <script src="weatherapp.js"></script>
+</body>
+</html>
